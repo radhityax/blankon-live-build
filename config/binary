@@ -13,7 +13,7 @@ LB_APT_INDICES="true"
 LB_BOOTAPPEND_LIVE="boot=live components quiet splash username=blankon hostname=blankon user-fullname=BlankOn nottyautologin"
 
 # Set boot parameters
-LB_BOOTAPPEND_INSTALL="file=/cdrom/preseed.cfg preseed/allow-unauthenticated=true"
+LB_BOOTAPPEND_INSTALL="preseed/allow-unauthenticated=true"
 
 # Set boot parameters
 LB_BOOTAPPEND_LIVE_FAILSAFE="boot=live components memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=788"
@@ -38,13 +38,13 @@ LB_ZSYNC="false"
 LB_BUILD_WITH_CHROOT="true"
 
 # Set debian-installer
-LB_DEBIAN_INSTALLER="none"
+LB_DEBIAN_INSTALLER="netinst"
 
 # Set debian-installer suite
 LB_DEBIAN_INSTALLER_DISTRIBUTION="sinambung"
 
 # Set debian-installer preseed filename/url
-LB_DEBIAN_INSTALLER_PRESEEDFILE="preseed.cfg"
+LB_DEBIAN_INSTALLER_PRESEEDFILE=""
 
 # Toggle use of GUI debian-installer
 LB_DEBIAN_INSTALLER_GUI="false"
